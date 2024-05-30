@@ -1,0 +1,44 @@
+.Equation{
+    background-color: rgb(238, 238, 238);
+    border: 0.3vh solid rgb(224, 224, 224);
+    cursor: auto;
+}
+#main{
+    height: 60vh;
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+    padding: 1vh;
+    padding-top: 2vh;
+}
+input[type=number]{
+    width: 2.5vw;
+    height: 1.5vh;
+}
+#main button{
+    width: 22.3vw;
+    padding: 1.5vh;
+    margin-top: 1vh;
+    border-radius: 0.75vh;
+    background-color: rgb(255, 255, 255);
+    user-select: none;
+    border: 0.1vh solid rgb(219, 219, 219);
+    font-size: 2vh;
+}
+#main button:hover{
+    background-color: rgb(237, 255, 237);
+    border: 0.1vh solid rgb(154, 154, 154);
+}
+#answer{
+    margin-top: 1vh;
+    border: 0.1vh solid rgb(204, 204, 204);
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    padding: 1.5vh;
+    font-size: 2vh;
+}
+#input{
+    font-size: 2.5vh;
+}

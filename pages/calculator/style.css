@@ -1,0 +1,47 @@
+.Calculator{
+    background-color: rgb(238, 238, 238);
+    border: 0.3vh solid rgb(224, 224, 224);
+    cursor: auto;
+}
+td{
+    background-color: white;
+    transition: 0.15s;
+    padding: 1.5vh;
+    font-size: 3vh;
+    width: 5vw;
+    text-align: center;
+    user-select: none;
+    border: 0.1vh solid rgb(224, 224, 224);
+}
+td:hover{
+    background-color: rgb(243, 243, 243);
+}
+table{
+    margin-top: 0.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.1vh solid rgb(234, 234, 234);
+}
+#del{
+    background-color: rgb(255, 52, 52);
+    color: white;
+}
+#del:hover{
+    background-color: rgb(215, 44, 44);
+}
+#res{
+    background-color: rgb(255, 183, 50);
+    color: black;
+}
+#res:hover{
+    background-color: rgb(235, 169, 46);
+}
+.content{
+    padding: 3vh;
+}
+#value{
+    margin-left: 38.5vw;
+    width: 18.9vw;
+    text-align: right;
+    font-size: 2.5vh;
+}

@@ -1,0 +1,72 @@
+.PS{
+    background-color: rgb(238, 238, 238);
+    border: 0.3vh solid rgb(224, 224, 224);
+    cursor: auto;
+}
+.content{
+    display: flex;
+}
+.side{
+    height: 100%;
+    width: 50vw;
+    padding: 3vh;
+}
+input[type=radio]{
+    display: none;
+}
+label{
+    text-align: center;
+    display: inline-block;
+	cursor: pointer;
+	padding: 1vh;
+    width: 16.9vw;
+	border: 0.1vh solid #999;
+	border-radius: 0.5vh;
+	user-select: none;
+    background-color: white;
+    font-size: 2vh;
+    transition: 0.25s;
+}
+label:hover{
+    background-color: rgb(244, 244, 244);
+}
+input[type=radio]:checked + label{
+    background-color: rgb(223, 249, 255);
+}
+input[type = number]{
+    width: 32.9vw;
+    text-align: center;
+}
+#circle{
+    border-radius: 100vh;
+    background-color: white;
+    border: 0.1vh solid rgb(189, 189, 189);
+    height: 10vh;
+    width: 10vh;
+    margin: 1vh auto;
+    padding: 8vh;
+}
+.sideContent{
+    margin-left: auto;
+    margin-right: auto;
+    width: 34.2vw;
+}
+.right input[type=number]{
+    padding: 1vh;
+    width: 15.8vw;
+}
+#cube{
+    background-color: white;
+    border: 0.1vh solid rgb(189, 189, 189);
+    height: 16vh;
+    width: 16vh;
+    margin: 4vh auto;
+    margin-bottom: 2.75vh;
+}
+.answer{
+    background-color: white;
+    padding: 1vh;
+    border-radius: 0.3vh;
+    text-align: center;
+    font-size: 2.25vh;
+}

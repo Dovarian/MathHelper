@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertor</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./../../math.min.js" defer></script>
+    <script src="./../../script.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Математический помощник</h1>
+      <hr />
+      <nav>
+        <a href="./../calculator/index.html"
+          ><button class="Calculator">Калькулятор</button></a
+        >
+        <a href="./../P&S/index.html"><button class="PS">P и S</button></a>
+        <a href="./../equation/index.html"
+          ><button class="Equation">Квадратные уравнения</button></a
+        >
+        <a><button class="Convertor">Конвертор</button></a>
+      </nav>
+    </header>
+    <div class="content">
+      <div id="main">
+        <div class="part">
+          <h3>Перевод систем исчисления</h3>
+          <input type="text" value="10" id="value" /><input
+            type="number"
+            class="lower"
+            value="10"
+            max="36"
+            min="2"
+          />
+          =
+          <input type="text" id="answer" value="1010" /><input
+            type="number"
+            class="lower"
+            value="2"
+            max="36"
+            min="2"
+          />
+        </div>
+        <hr />
+        <div class="part p">
+          <h3>Перевод единиц измерения расстояния</h3>
+          <input
+            type="number"
+            class="distant"
+            name="distant"
+            value="1"
+          /><select name="distant" class="selectdistant">
+            <option>мм</option>
+            <option>см</option>
+            <option>м</option>
+            <option>км</option>
+          </select>
+          =
+          <input
+            type="number"
+            class="distant"
+            name="distant"
+            value="1"
+          /><select name="distant" class="selectdistant">
+            <option>мм</option>
+            <option>см</option>
+            <option>м</option>
+            <option>км</option>
+          </select>
+        </div>
+        <div class="part p">
+          <h3>Перевод единиц измерения площади</h3>
+          <input type="number" class="square" name="square" value="1" /><select
+            name="square"
+            class="selectsquare"
+          >
+            <option>мм^2</option>
+            <option>см^2</option>
+            <option>м^2</option>
+            <option>км^2</option>
+          </select>
+          =
+          <input type="number" class="square" name="square" value="1" /><select
+            name="square"
+            class="selectsquare"
+          >
+            <option>мм^2</option>
+            <option>см^2</option>
+            <option>м^2</option>
+            <option>км^2</option>
+          </select>
+        </div>
+        <div class="part p">
+          <h3>Перевод единиц измерения объема</h3>
+          <input type="number" class="volume" name="volume" value="1" /><select
+            name="volume"
+            class="selectvolume"
+          >
+            <option>мм^3</option>
+            <option>см^3</option>
+            <option>м^3</option>
+            <option>км^3</option>
+          </select>
+          =
+          <input type="number" class="volume" name="volume" value="1" /><select
+            name="volume"
+            class="selectvolume"
+          >
+            <option>мм^3</option>
+            <option>см^3</option>
+            <option>м^3</option>
+            <option>км^3</option>
+          </select>
+        </div>
+        <hr />
+        <div class="part p">
+          <h3>Перевод единиц измерения веса</h3>
+          <input type="number" class="weight" name="weight" value="1" /><select
+            name="weight"
+            class="selectweight"
+          >
+            <option>г</option>
+            <option>кг</option>
+            <option>ц</option>
+            <option>т</option>
+          </select>
+          =
+          <input type="number" class="weight" name="weight" value="1" /><select
+            name="weight"
+            class="selectweight"
+          >
+            <option>г</option>
+            <option>кг</option>
+            <option>ц</option>
+            <option>т</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

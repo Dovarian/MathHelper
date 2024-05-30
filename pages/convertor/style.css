@@ -1,0 +1,42 @@
+.Convertor{
+    background-color: rgb(238, 238, 238);
+    border: 0.3vh solid rgb(224, 224, 224);
+    cursor: auto;
+}
+#main{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+    height: 7vh;
+    width: 41vw;
+    font-size: 2.5vh;
+}
+.lower{
+    transform: translateY(0.6vh);
+    height: 1vh;
+    width: 2vw;
+    font-size: 2vh;
+}
+input[type=text]{
+    width: 15vw;
+}
+.part{
+    width: 41vw;
+    height: 13vh;
+}
+select{
+    all: unset;
+    width: 4vw;
+    padding: 1.1vh;
+    background-color: white;
+    font-size: 2vh;
+    border-radius: 0.75vh;
+    border: 0.1vh solid rgb(212, 212, 212);
+    cursor: pointer;
+}
+.distant,
+.square,
+.volume,
+.weight{
+    width: 10vw;
+}
