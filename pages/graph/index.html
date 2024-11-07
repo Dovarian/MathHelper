@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>P&S</title>
+    <title>Graph</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../../style.css" />
     <script src="./../../math.min.js" defer></script>
@@ -28,6 +28,23 @@
         <a><button class="Graph">График функции</button></a>
       </nav>
     </header>
-    <div class="content"></div>
+    <div class="content">
+      <div class="settings">
+        <div class="setting">
+          y =
+          <input
+            type="text"
+            value="x*x"
+            placeholder="формула"
+            class="formula"
+          />
+        </div>
+        <div class="setting">
+          Масштаб =
+          <input type="number" value="25" min="1" max="100" class="scale" />
+        </div>
+      </div>
+      <canvas width="400" height="400"></canvas>
+    </div>
   </body>
 </html>
