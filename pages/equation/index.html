@@ -1,47 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Equation</title>
-    <link rel="stylesheet" href="../../style.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="./../../math.min.js" defer></script>
-    <script src="./../../script.js" defer></script>
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <h1>Математический помощник</h1>
-      <hr />
-      <nav>
-        <a href="./../calculator/index.html"
-          ><button class="Calculator">Калькулятор</button></a
-        >
-        <a href="./../P&S/index.html"><button class="PS">P и S</button></a>
-        <a><button class="Equation">Квадратные уравнения</button></a>
-        <a href="./../convertor/index.html"
-          ><button class="Convertor">Конвертор</button></a
-        >
-        <a href="./../graph/index.html"
-          ><button class="Graph">График функции</button></a
-        >
-      </nav>
-    </header>
-    <div class="content">
-      <div id="main">
-        <div id="input">
-          <input type="number" placeholder="a" id="a" />x +
-          <input type="number" placeholder="b" id="b" />x^2 +
-          <input type="number" placeholder="c" id="c" /> = 0
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Equation</title>
+        <link rel="stylesheet" href="../../main.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="./../../math.min.js" defer></script>
+        <script src="./../../main-script.js" defer></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Математический помощник</h1>
+            <hr />
+            <nav>
+                <a href="./../../index.html"><button class="Calculator">Калькулятор</button></a>
+                <a href="./../P&S/index.html"><button class="PS">P и S</button></a>
+                <a><button class="Equation">Квадратные уравнения</button></a>
+                <a href="./../convertor/index.html"><button class="Convertor">Конвертор</button></a>
+                <a href="./../graph/index.html"><button class="Graph">График функции</button></a>
+            </nav>
+        </header>
+        <div class="content">
+            <div id="main">
+                <div id="input">
+                    <input type="number" placeholder="a" id="a" />x + <input type="number" placeholder="b" id="b" />x^2
+                    + <input type="number" placeholder="c" id="c" /> = 0
+                </div>
+                <button id="btn">Решить</button>
+                <div id="answer">
+                    D = ...<br />
+                    x1 = ... <br />
+                    x2 = ...
+                </div>
+            </div>
         </div>
-        <button id="btn">Решить</button>
-        <div id="answer">
-          D = ...<br />
-          x1 = ... <br />
-          x2 = ...
-        </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>

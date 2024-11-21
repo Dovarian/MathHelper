@@ -1,84 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>P&S</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../../style.css" />
-    <script src="./../../math.min.js" defer></script>
-    <script src="./../../script.js" defer></script>
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <h1>Математический помощник</h1>
-      <hr />
-      <nav>
-        <a href="./../calculator/index.html"
-          ><button class="Calculator">Калькулятор</button></a
-        >
-        <a><button class="PS">P и S</button></a>
-        <a href="./../equation/index.html"
-          ><button class="Equation">Квадратные уравнения</button></a
-        >
-        <a href="./../convertor/index.html"
-          ><button class="Convertor">Конвертор</button></a
-        >
-        <a href="./../graph/index.html"
-          ><button class="Graph">График функции</button></a
-        >
-      </nav>
-    </header>
-    <div class="content">
-      <div class="side">
-        <div class="sideContent">
-          <input
-            type="number"
-            placeholder="Радиус"
-            id="circleValue"
-            value="80"
-            min="1"
-          /><br /><br />
-          <input type="radio" name="circle" id="r" class="elCi" checked />
-          <label for="r">Радиус</label>
-          <input type="radio" name="circle" id="d" class="elCi" />
-          <label for="d">Диаметр</label><br /><br />
-          <input type="radio" name="PandS" id="PCi" class="elCi" checked />
-          <label for="PCi">Периметр</label>
-          <input type="radio" name="PandS" id="SCi" class="elCi" />
-          <label for="SCi" class="elC">Площадь</label>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>P&S</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../../main.css" />
+        <script src="./../../math.min.js" defer></script>
+        <script src="./../../main-script.js" defer></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Математический помощник</h1>
+            <hr />
+            <nav>
+                <a href="./../../index.html"><button class="Calculator">Калькулятор</button></a>
+                <a><button class="PS">P и S</button></a>
+                <a href="./../equation/index.html"><button class="Equation">Квадратные уравнения</button></a>
+                <a href="./../convertor/index.html"><button class="Convertor">Конвертор</button></a>
+                <a href="./../graph/index.html"><button class="Graph">График функции</button></a>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="side">
+                <div class="sideContent">
+                    <input type="number" placeholder="Радиус" id="circleValue" value="80" min="1" /><br /><br />
+                    <input type="radio" name="circle" id="r" class="elCi" checked />
+                    <label for="r">Радиус</label>
+                    <input type="radio" name="circle" id="d" class="elCi" />
+                    <label for="d">Диаметр</label><br /><br />
+                    <input type="radio" name="PandS" id="PCi" class="elCi" checked />
+                    <label for="PCi">Периметр</label>
+                    <input type="radio" name="PandS" id="SCi" class="elCi" />
+                    <label for="SCi" class="elC">Площадь</label>
+                </div>
+                <div id="circle"></div>
+                <hr />
+                <div class="answer" id="answerCircle">502.65</div>
+            </div>
+            <div class="side right">
+                <div class="sideContent">
+                    <input type="number" placeholder="Высота" class="cubeValue" id="height" value="60" />
+                    <input type="number" placeholder="Ширина" class="cubeValue" id="width" value="60" /><br /><br />
+                    <input type="radio" name="square" id="PCu" class="elCu" checked />
+                    <label for="PCu">Периметр</label>
+                    <input type="radio" name="square" id="SCu" class="elCu" />
+                    <label for="SCu">Площадь</label>
+                </div>
+                <br /><br />
+                <div id="cube"></div>
+                <hr />
+                <div class="answer" id="answerCube">240</div>
+            </div>
         </div>
-        <div id="circle"></div>
-        <hr />
-        <div class="answer" id="answerCircle">502.65</div>
-      </div>
-      <div class="side right">
-        <div class="sideContent">
-          <input
-            type="number"
-            placeholder="Высота"
-            class="cubeValue"
-            id="height"
-            value="60"
-          />
-          <input
-            type="number"
-            placeholder="Ширина"
-            class="cubeValue"
-            id="width"
-            value="60"
-          /><br /><br />
-          <input type="radio" name="square" id="PCu" class="elCu" checked />
-          <label for="PCu">Периметр</label>
-          <input type="radio" name="square" id="SCu" class="elCu" />
-          <label for="SCu">Площадь</label>
-        </div>
-        <br /><br />
-        <div id="cube"></div>
-        <hr />
-        <div class="answer" id="answerCube">240</div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
