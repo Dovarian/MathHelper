@@ -1,50 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Graph</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../../style.css" />
-    <script src="./../../math.min.js" defer></script>
-    <script src="./../../script.js" defer></script>
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <h1>Математический помощник</h1>
-      <hr />
-      <nav>
-        <a href="./../calculator/index.html"
-          ><button class="Calculator">Калькулятор</button></a
-        >
-        <a><button class="PS">P и S</button></a>
-        <a href="./../equation/index.html"
-          ><button class="Equation">Квадратные уравнения</button></a
-        >
-        <a href="./../convertor/index.html"
-          ><button class="Convertor">Конвертор</button></a
-        >
-        <a><button class="Graph">График функции</button></a>
-      </nav>
-    </header>
-    <div class="content">
-      <div class="settings">
-        <div class="setting">
-          y =
-          <input
-            type="text"
-            value="x*x"
-            placeholder="формула"
-            class="formula"
-          />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Graph</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../../style.css" />
+        <script src="./../../math.min.js" defer></script>
+        <script src="./../../script.js" defer></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Математический помощник</h1>
+            <hr />
+            <nav>
+                <a href="./../calculator/index.html"><button class="Calculator">Калькулятор</button></a>
+                <a><button class="PS">P и S</button></a>
+                <a href="./../equation/index.html"><button class="Equation">Квадратные уравнения</button></a>
+                <a href="./../convertor/index.html"><button class="Convertor">Конвертор</button></a>
+                <a><button class="Graph">График функции</button></a>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="settings">
+                <div class="setting">
+                    y =
+                    <input type="text" value="x*x" placeholder="формула" class="formula" />
+                </div>
+                <div class="setting">
+                    Масштаб =
+                    <input type="number" value="25" min="1" max="100" class="scale" />
+                </div>
+            </div>
+            <canvas width="400" height="400"></canvas>
         </div>
-        <div class="setting">
-          Масштаб =
-          <input type="number" value="25" min="1" max="100" class="scale" />
-        </div>
-      </div>
-      <canvas width="400" height="400"></canvas>
-    </div>
-  </body>
+    </body>
 </html>

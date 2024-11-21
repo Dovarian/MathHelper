@@ -1,21 +1,32 @@
-.Graph{
+.Graph {
     background-color: rgb(238, 238, 238);
     border: 0.3vh solid rgb(224, 224, 224);
     cursor: auto;
 }
 
-.content{
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 10vh;
 }
 
-.setting{
+.setting {
     font-size: 2.5vh;
 }
 
-.setting input{
+.setting input {
     width: 5vw;
     font-size: 2.5vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.settings {
+    display: flex;
+    gap: 15px;
 }
